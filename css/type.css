@@ -1,0 +1,19 @@
+/*
+@font-face {
+  font-family: 'Font Reference';
+  src: url('../type/IEName.eot');
+  src: local('Local Font Name Regular'), local('Local Font Name'), url('../type/WebOpenFontFormat.woff') format('woff'), url('../type/OpenType.otf') format('opentype'), url('../type/TrueType.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Font Reference Italic';
+  src: url('../type/IEName.eot');
+  src: local('Local Font Name Regular'), local('Local Font Name'), url('../type/WebOpenFontFormat.woff') format('woff'), url('../type/OpenType.otf') format('opentype'), url('../type/TrueType.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Font Reference Bold';
+  src: url('../type/IEName.eot');
+  src: local('Local Font Name Regular'), local('Local Font Name'), url('../type/WebOpenFontFormat.woff') format('woff'), url('../type/OpenType.otf') format('opentype'), url('../type/TrueType.ttf') format('truetype');
+}
+em { font-family: 'Font Reference Italic'; }
+strong { font-family: 'Font Reference Bold'; }
+*/
