@@ -6,3 +6,9 @@ AddType text/cache-manifest .manifest
 RewriteEngine On 
 RewriteCond %{SERVER_PORT} 80 
 RewriteRule ^(.*)$ https://www.philiprenich.com/$1 [R,L]
+
+#Gzip
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript text/javascript
+</ifmodule>
+#End Gzip

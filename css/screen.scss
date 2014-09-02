@@ -1,0 +1,37 @@
+/*
+	Developed by Philip Renich
+
+	http://elfboy.com
+	info@elfboy.com
+*/
+html { font-size: 62.5%; }
+body {
+	margin: 1em;
+	font: 1.6em/1.8em 'Bitter', Georgia, serif;
+}
+p {
+	margin: 1em 0;
+}
+
+#wrap {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex: column;
+    flex-direction: column;
+}
+
+[role="main"] {
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+	order: 1;    
+}
+[role="secondary"] {
+	text-align: center;
+	>img {
+		max-width: 100%;
+	}
+}
