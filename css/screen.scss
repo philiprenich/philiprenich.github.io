@@ -7,7 +7,11 @@
 html { font-size: 62.5%; }
 body {
 	margin: 1em;
-	font: 1.6em/1.8em 'Bitter', Georgia, serif;
+	font: 1.6em/1.8 'Bitter', Georgia, serif;
+	color: #333;
+
+/*	background: url(../images/keep_exploring.jpg) no-repeat;
+	background-size: cover;*/
 }
 p {
 	margin: 1em 0;
@@ -30,8 +34,42 @@ p {
 	order: 1;    
 }
 [role="secondary"] {
+	padding-bottom: 1em;
+	border-bottom: 1px solid;
 	text-align: center;
-	>img {
-		max-width: 100%;
+	>.intro {
+		margin: 0 0 .5em;
+		font-size: 4rem;
+		line-height: 1.3;
+		font-family: 'Lato', serif;
+	}
+	>.headshot {
+		position: relative;
+		display: inline-block;
+		>img {
+			max-width: 65%;
+		}
+		>.gus {
+			position: absolute;
+			top: 40%;
+			left: 55%;
+			padding: .2em 0.75em;
+			opacity: 0;
+			border-radius: 1em;
+			font-size: 1.4rem;
+			font-style: italic;
+			color: #fff;
+			background: rgba(0,0,0,0.6);
+			-webkit-transition: opacity .5s;
+			transition: opacity 1s;
+		}
+		&:hover>.gus {
+			opacity: 1;
+		}
+	}
+	>.contact {
+		font-size: 1.4rem;
+		line-height: 1.5;
+		font-style: italic;
 	}
 }
