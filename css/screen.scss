@@ -67,6 +67,7 @@ header.main-title {
 
 [role="secondary"] {
 	@extend %vertical-divider;
+	text-align: center;
 	>.intro {
 		@extend %main-title;
 	}
