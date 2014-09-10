@@ -4,11 +4,13 @@
 	http://elfboy.com
 	info@elfboy.com
 */
+@import "respondTo";
+
 html { font-size: 62.5%; }
 body {
-	margin: 1em;
 	font: 1.6em/1.8 'Bitter', Georgia, serif;
 	color: #333;
+	background: #899986	;
 
 /*	background: url(../images/keep_exploring.jpg) no-repeat;
 	background-size: cover;*/
@@ -26,6 +28,16 @@ p {
 
     -webkit-flex-direction: column;
     flex-direction: column;
+
+    padding: 1em;
+    background: #fff;
+
+    @include respondTo(medium) {
+    	margin: 0 auto;
+    	max-width: 60rem;
+    	border: 1px solid #3F503B;
+    	border-width: 0 1px;
+    }
 }
 
 [role="main"] {
