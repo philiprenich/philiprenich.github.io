@@ -36,8 +36,7 @@ p {
 }
 
 #wrap {
-    @extend %flex-container;
-    @extend %flex-column;
+    @include flex-container(column);
 
     padding: 1em;
     background: #fff;
@@ -49,8 +48,15 @@ p {
     	border-width: 0 1px;
     }
 }
+.resume #wrap {
+    @include respondTo(large) {
+    	width: 90%;
+    	max-width: 120rem;
+    }
+}
 
 [role="main"] {
+    @include flex-container(row wrap);
     -ms-flex-order: 1;
     -webkit-order: 1;
 	order: 1;    
@@ -75,7 +81,7 @@ header.main-title {
 		position: relative;
 		display: inline-block;
 		>img {
-			max-width: 65%;
+			max-width: 50%;
 		}
 		>.gus {
 			position: absolute;
@@ -101,11 +107,27 @@ header.main-title {
 		font-style: italic;
 	}
 }
+.experience, .volunteer {
+	>h1 {
+		font-size: 2em;
+	}
+}
+.experience {
+	@include flex-item(3 0 0);
+	margin-right: 5em;
+	margin-left: 4em;
+}
+.volunteer {
+	@include flex-item(2 0 0);
+	padding: 1em;
+	font-size: .85em;
+	background: lighten(#899986, 40%);
+	
+}
 
 .experience>article, .volunteer>article {
-	margin-bottom: 3em;
 	>header {
-		@extend %flex-container;
+		@include flex-container();
 		@extend %justify-content-between;
 
 		margin-bottom: -.5em;

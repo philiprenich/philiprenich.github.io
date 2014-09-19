@@ -1,18 +1,45 @@
-%flex-container {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
+@mixin flex-container($dir: row wrap, $align: stretch) {
+    $ios_orient: horizontal;
+    $ios_lines: multiple;
+
+    @if nth($dir, 1) == column {
+        $ios_orient: vertical;
+    }
+    @if length($dir) > 1 and nth($dir, 2) == nowrap {
+        $ios_lines: single;
+    }
+
+    display: -webkit-box; //ios
     display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-flow: $dir;
+    -moz-flex-flow: $dir;
+    -ms-flex-direction: $dir;
+    -webkit-box-orient: $ios_orient; //ios
+    -webkit-box-lines: $ios_lines; //ios
+    flex-flow: $dir;
+    -webkit-align-items: $align;
+    -moz-align-items: $align;
+    -ms-flex-align: $align;
+    -webkit-box-align: $align; //ios
+    align-items: $align;
 }
-%flex-column {
-	-ms-flex-direction: column;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-}
+
 %justify-content-between {
 	flex-pack: justify;
 	-ms-flex-pack: justify;
 	-webkit-justify-content: space-between;
 	justify-content: space-between;
+}
+
+@mixin flex-item($flex: 0 1 auto) {
+    $ios_flex: nth($flex, 1);   
+
+    -webkit-box-flex: $ios_flex; //ios
+    -webkit-flex: $flex;
+    -moz-flex: $flex;
+    -ms-flex: $flex;
+    flex: $flex;
 }
