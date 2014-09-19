@@ -28,10 +28,12 @@ header.main-title, [role="secondary"] {
 }
 
 html {
+  height: 100%;
   font-size: 62.5%;
 }
 
 body {
+  height: 100%;
   font: 1.6em/1.8 "Bitter", Georgia, serif;
   color: #333;
   background: #899986;
@@ -41,6 +43,15 @@ body {
 
 p {
   margin: 1em 0;
+}
+
+a {
+  color: #457f13;
+}
+a:hover {
+  font-weight: bold;
+  line-height: 1em;
+  letter-spacing: -0.5px;
 }
 
 #wrap {
@@ -61,6 +72,8 @@ p {
   -webkit-box-align: stretch;
   align-items: stretch;
   padding: 1em;
+  min-height: -webkit-calc(100% - 2em);
+  min-height: calc(100% - 2em);
   background: #fff;
 }
 @media only screen and (min-width: 640px) {
@@ -104,6 +117,16 @@ p {
 .main-title > h2 {
   font-style: italic;
 }
+.main-title > p {
+  margin: 1em auto 0;
+  max-width: 39em;
+  font-size: 1.4rem;
+}
+@media only screen and (min-width: 1024px) {
+  .main-title > p {
+    font-size: 1.6rem;
+  }
+}
 
 [role="secondary"] {
   text-align: center;
@@ -137,6 +160,9 @@ p {
   line-height: 1.5;
   font-style: italic;
 }
+[role="secondary"] > .contact a:hover {
+  letter-spacing: 0;
+}
 
 .experience > h1, .volunteer > h1 {
   font-size: 2em;
@@ -144,12 +170,20 @@ p {
 
 .experience {
   -webkit-box-flex: 3;
-  -webkit-flex: 3 0 0;
-  -moz-flex: 3 0 0;
-  -ms-flex: 3 0 0;
-  flex: 3 0 0;
+  -webkit-flex: 3 0 100%;
+  -moz-flex: 3 0 100%;
+  -ms-flex: 3 0 100%;
+  flex: 3 0 100%;
   margin-right: 5em;
-  margin-left: 4em;
+}
+@media only screen and (min-width: 1024px) {
+  .experience {
+    -webkit-box-flex: 3;
+    -webkit-flex: 3 0 0;
+    -moz-flex: 3 0 0;
+    -ms-flex: 3 0 0;
+    flex: 3 0 0;
+  }
 }
 
 .volunteer {
@@ -182,4 +216,12 @@ p {
   align-items: stretch;
   margin-bottom: -0.5em;
   font-weight: bold;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
 }

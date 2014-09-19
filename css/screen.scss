@@ -22,8 +22,9 @@
 	border-bottom: 1px solid #899986;
 }
 
-html { font-size: 62.5%; }
+html { height: 100%; font-size: 62.5%; }
 body {
+	height: 100%;
 	font: 1.6em/1.8 'Bitter', Georgia, serif;
 	color: #333;
 	background: #899986;
@@ -34,11 +35,21 @@ body {
 p {
 	margin: 1em 0;
 }
+a {
+	color: #457f13;
+	&:hover {
+		font-weight: bold;
+		line-height: 1em;
+		letter-spacing: -.5px;
+	}
+}
 
 #wrap {
     @include flex-container(column);
 
     padding: 1em;
+    min-height: -webkit-calc(100% - 2em);
+    min-height: calc(100% - 2em);
     background: #fff;
 
     @include respondTo(medium) {
@@ -63,9 +74,17 @@ p {
 }
 .main-title {
 	@extend %main-title;
-		>h2 {
-			font-style: italic;
-		}
+	>h2 {
+		font-style: italic;
+	}
+	>p {
+		margin: 1em auto 0;
+		max-width: 39em;
+		font-size: 1.4rem;
+    	@include respondTo(large) {
+    		font-size: 1.6rem;
+    	}
+	}
 }
 header.main-title {
 	@extend %vertical-divider;
@@ -105,6 +124,9 @@ header.main-title {
 		font-size: 1.4rem;
 		line-height: 1.5;
 		font-style: italic;
+		a:hover {
+			letter-spacing: 0;
+		}
 	}
 }
 .experience, .volunteer {
@@ -113,9 +135,11 @@ header.main-title {
 	}
 }
 .experience {
-	@include flex-item(3 0 0);
+	@include flex-item(3 0 100%);
+	@include respondTo(large) {
+		@include flex-item(3 0 0);
+	}
 	margin-right: 5em;
-	margin-left: 4em;
 }
 .volunteer {
 	@include flex-item(2 0 0);
@@ -134,3 +158,7 @@ header.main-title {
 		font-weight: bold;
 	}
 }
+
+
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
