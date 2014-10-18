@@ -24,7 +24,8 @@ $(document).ready(function() {
 				'email': $contact.find('email').val(),
 				'name': $contact.find('name').val(),
 				'message': $contact.find('message').val(),
-				'send': $(this).val()
+				'send': $(this).val(),
+				'ajax': true
 			};
 			$.post(api, data, function(response) {
 				response = JSON.parse(response);
