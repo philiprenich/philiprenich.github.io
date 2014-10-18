@@ -1,4 +1,5 @@
-var url = 'http://api.philiprenich.com/contact.php';
+var api = 'http://api.philiprenich.com/contact.php',
+	url = 'contact.html';
 $(document).ready(function() {
 	$.get(url, function(page) {
 		var $contact = $(page).find('#contact');
@@ -25,7 +26,7 @@ $(document).ready(function() {
 				'message': $contact.find('message').val(),
 				'send': $(this).val()
 			};
-			$.post(url, data, function(response) {
+			$.post(api, data, function(response) {
 				response = JSON.parse(response);
 				if(response.success) {
 					var $form = $contact.find('form').clone();
