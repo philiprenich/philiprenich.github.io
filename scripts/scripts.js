@@ -21,9 +21,9 @@ $(document).ready(function() {
 		});
 		$contact.find('[name=send]').click(function(e) {
 			var data = {
-				'email': $contact.find('email').val(),
-				'name': $contact.find('name').val(),
-				'message': $contact.find('message').val(),
+				'email': $contact.find('[name=email]').val(),
+				'name': $contact.find('[name=name]').val(),
+				'message': $contact.find('[name=message]').val(),
 				'send': $(this).val(),
 				'ajax': true
 			};
