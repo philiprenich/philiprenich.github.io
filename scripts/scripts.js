@@ -3,7 +3,7 @@ var api = 'http://api.philiprenich.com/contact.php',
 $(document).ready(function() {
 	$.get(url, function(page) {
 		var $contact = $(page).find('#contact');
-		$('#wrap').after($contact);
+		$('#wrap').after($contact.addClass('popup'));
 
 
 		$('a[href="contact.html"]').click(function(e) {
