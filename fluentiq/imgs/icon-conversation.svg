@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="45px" viewBox="0 0 38 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
+    <title>Imported Layers + mic Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop-Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="LA01-01-D:--LANDING" sketch:type="MSArtboardGroup" transform="translate(-410.000000, -648.000000)">
+            <g id="Imported-Layers-+-mic-Copy-2" sketch:type="MSLayerGroup" transform="translate(410.000000, 647.000000)">
+                <g id="Imported-Layers" transform="translate(19.000000, 23.241935) scale(-1, 1) rotate(-180.000000) translate(-19.000000, -23.241935) translate(0.000000, 0.241935)" sketch:type="MSShapeGroup">
+                    <path d="M36.0242344,0.241935484 L2.20605269,0.241935484 C1.05114361,0.241935484 0.115143613,1.12877608 0.115143613,2.2230285 L-1.0658141e-14,42.9852121 C-1.0658141e-14,44.07912 0.759999996,45.2419355 2.27999999,45.2419355 L27.3600001,45.2419355 C27.3600001,45.2419355 33.7302331,38.9367363 36.9153496,35.7841368 C37.2768997,35.4262777 38,34.7105596 38,34.7105596 L37.9999998,2.36419038 C37.9999998,0.859708152 37.1791434,0.241935484 36.0242344,0.241935484 Z" id="Fill-2" fill="#4FAB67"></path>
+                    <path d="M38,34.2419355 L28.5714286,34.2419355 C27.672892,34.2419355 27,34.9148274 27,35.813364 L27,45.2419355 L38,34.2419355 Z" id="Fill-10" fill="#89CF9B"></path>
+                </g>
+                <g id="mic" transform="translate(11.000000, 13.000000)" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                    <path d="M9,14 C10.4833333,14 12,12.4833333 12,11 L12,4 C12,1.51666667 10.4833333,-1.33226763e-13 9,-1.33226763e-13 C6.51666667,-1.33226763e-13 5,1.51666667 5,4 L5,11 C5,12.4833333 6.51666667,14 9,14 L9,14 Z M14,10 C14.0571429,13.6 11.2,16.12 8,16 C4.8,16.12 1.94285714,13.6 2,10 L1.88293825e-13,10 C1.88293825e-13,14.08 3.08571429,17.44 7,18 L7,22 L9,22 L9,18 C12.9142857,17.44 16,14.08 16,10 L14,10 L14,10 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
