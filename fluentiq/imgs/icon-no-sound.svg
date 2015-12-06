@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="34px" height="35px" viewBox="0 0 34 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon - Speakers off</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop-Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="SU01-24-D:--NO-SOUND" sketch:type="MSArtboardGroup" transform="translate(-431.000000, -232.000000)" fill="#000000">
+            <g id="Icon---Speakers-off" sketch:type="MSLayerGroup" transform="translate(426.000000, 227.000000)">
+                <g id="mic-none" transform="translate(5.000000, 5.000000)" sketch:type="MSShapeGroup">
+                    <g id="volume-off">
+                        <path d="M25.5,17 C25.5,13.6 23.6111111,10.7666667 20.7777778,9.44444444 L20.7777778,13.6 L25.5,18.3222222 L25.5,17 L25.5,17 Z M30.2222222,17 C30.2222222,18.7 29.8444444,20.4 29.2777778,21.9111111 L32.1111111,24.7444444 C33.4333333,22.4777778 34,19.6444444 34,16.8111111 C34,8.68888889 28.3333333,1.88888889 20.7777778,0.188888889 L20.7777778,4.15555556 C26.2555556,6.04444444 30.2222222,10.9555556 30.2222222,17 L30.2222222,17 Z M2.45555556,0 L0,2.45555556 L8.87777778,11.3333333 L0,11.3333333 L0,22.6666667 L7.55555556,22.6666667 L17,32.1111111 L17,19.4555556 L25.1222222,27.5777778 C23.8,28.5222222 22.4777778,29.2777778 20.7777778,29.8444444 L20.7777778,33.8111111 C23.4222222,33.2444444 25.6888889,32.1111111 27.7666667,30.4111111 L31.5444444,34.1888889 L34,31.7333333 L17,14.7333333 L2.45555556,0 L2.45555556,0 Z M17,1.88888889 L13.0333333,5.85555556 L17,9.82222222 L17,1.88888889 L17,1.88888889 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

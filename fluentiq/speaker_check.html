@@ -1,5 +1,5 @@
-<!doctype html>
-<html class="no-js" lang="en">
+﻿<!doctype html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -11,72 +11,73 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6488894/673948/css/fonts.css" />
     </head>
     <body>
-    	<header role="banner">
-    		<img src="imgs/Logo2x.png" id="logo" alt="Fluent IQ" />
-    	</header>
-    	<section role="main">
-    		<div>
+        <header role="banner">
+            <img src="imgs/Logo2x.png" id="logo" alt="Fluent IQ" />
+        </header>
+        <section role="main">
+            <div>
                 <h1 class="icon icon-audio text-center">Speaker Check</h1>
                 <p>We need to make sure your speakers are working properly.</p>
                 <p class="instructions">Play the audio clip. Can you hear a person talking?</p>
 
                 <div class="player no-js">
-                	<div class="controls">
-                		<span class="play control" title="Play">Play</span>
-                		<span class="pause control hide" title="Pause">Pause</span>
-                	</div>
-                	<div class="progress">
-                		<progress value="0" max="100">0%</progress>
-                		<span class="time curTime">0:00</span>
-                		<span class="time remainTime">0:00</span>
-                	</div>
-                	<audio preload controls>
-                		<source src="audio/theforce.mp3" type="audio/mpeg" />
-                	</audio>
+                    <div class="controls">
+                        <span class="play control" title="Play">Play</span>
+                        <span class="pause control hide" title="Pause">Pause</span>
+                    </div>
+                    <div class="progress">
+                        <progress value="0" max="100">0%</progress>
+                        <span class="time curTime">0:00</span>
+                        <span class="time remainTime">0:00</span>
+                    </div>
+                    <audio preload controls>
+                        <source src="audio/theforce.mp3" type="audio/mpeg" />
+                    </audio>
                 </div>
                 <div class="confirmation-buttons">
-	                <button class="btn-negative">No</button>
-	                <button class="btn-positive">Yes!</button>
-	            </div>
+                    <button class="btn-negative">No</button>
+                    <button class="btn-positive">Yes!</button>
+                </div>
 
                 <nav>
-                	<ul>
-                		<li><a href="#" class="btn btn-prev">Back</a></li>
-                		<li><a href="#" class="btn btn-next">Next</a></li>
-        			</ul>
-        		</nav>
+                    <ul>
+                        <li><a href="#" class="btn btn-prev">Back</a></li>
+                        <li><a href="#" class="btn btn-next">Next</a></li>
+                    </ul>
+                </nav>
 
-	    		<div class="test-progress">
-	    			<ol class="steps">
-	    				<li class="done">x</li>
-	    				<li class="done">x</li>
-	    				<li class="done">x</li>
-	    				<li class="done">x</li>
-	    				<li class="not-done">o</li>
-	    				<li class="not-done">o</li>
-	    				<li class="not-done">o</li>
-	    				<li class="not-done">o</li>
-	    				<li class="not-done">o</li>
-	    				<li class="not-done">o</li>
-	    				<li class="not-done">o</li>
-	    				<li class="not-done">o</li>
-	    				<li class="not-done">o</li>
-	    				<li class="finish">*</li>
-	    				<span>Results</span>
-	    			</ol>
-	    		</div>
-    		</div>
-    	</section>
-    	<footer role="contentinfo">
-    		<p id="copyright">Copyright Fluent Scientific Ltd 2015, All Rights Reserved</p>
-    		<ul class="tos_links">
-    			<li><a href="#tos">Terms of Use</a></li>
-    			<li><a href="#privacy">Privacy Policy</a></li>
-    		</ul>
-    	</footer>
+                <div class="test-progress divider">
+                    <ol class="steps">
+                        <li class="done">x</li>
+                        <li class="done">x</li>
+                        <li class="done">x</li>
+                        <li class="done">x</li>
+                        <li class="not-done">o</li>
+                        <li class="not-done">o</li>
+                        <li class="not-done">o</li>
+                        <li class="not-done">o</li>
+                        <li class="not-done">o</li>
+                        <li class="not-done">o</li>
+                        <li class="not-done">o</li>
+                        <li class="not-done">o</li>
+                        <li class="not-done">o</li>
+                        <li class="finish">*</li>
+                        <span>Results</span>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <footer role="contentinfo">
+            <p id="copyright">Copyright Fluent Scientific Ltd 2015, All Rights Reserved</p>
+            <ul class="tos_links">
+                <li><a href="#tos">Terms of Use</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+        </footer>
 
-    	<script src="js/site.min.js"></script>
+        <script src="js/site.min.js"></script>
     </body>
 </html>

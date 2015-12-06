@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="25px" height="34px" viewBox="0 0 25 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon - Microphone enabled</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop-Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="SU01-22-D:--MIC-ENABLED---RETRY" sketch:type="MSArtboardGroup" transform="translate(-436.000000, -258.000000)" fill="#000000">
+            <g id="Icon---Microphone-enabled" sketch:type="MSLayerGroup" transform="translate(426.000000, 253.000000)">
+                <g id="mic" transform="translate(10.000000, 5.000000)" sketch:type="MSShapeGroup">
+                    <path d="M12.5,21.4285714 C15.5357143,21.4285714 17.8571429,19.1071429 17.8571429,16.0714286 L17.8571429,5.35714286 C17.8571429,2.32142857 15.5357143,0 12.5,0 C9.46428571,0 7.14285714,2.32142857 7.14285714,5.35714286 L7.14285714,16.0714286 C7.14285714,19.1071429 9.46428571,21.4285714 12.5,21.4285714 L12.5,21.4285714 Z M21.9642857,16.0714286 C21.9642857,21.4285714 17.5,25.1785714 12.5,25.1785714 C7.5,25.1785714 3.03571429,21.4285714 3.03571429,16.0714286 L0,16.0714286 C0,22.1428571 4.82142857,27.1428571 10.7142857,28.0357143 L10.7142857,33.9285714 L14.2857143,33.9285714 L14.2857143,28.0357143 C20.1785714,27.1428571 25,22.1428571 25,16.0714286 L21.9642857,16.0714286 L21.9642857,16.0714286 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,5 +1,5 @@
-<!doctype html>
-<html class="no-js" lang="en">
+﻿<!doctype html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -11,25 +11,77 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/global.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6488894/673948/css/fonts.css" />
     </head>
     <body>
-    	<header role="banner">
-    		<img src="imgs/Logo2x.png" id="logo" alt="Fluent IQ" />
-    	</header>
-    	<section role="main">
-    		<div>
+        <header role="banner">
+            <img src="imgs/Logo2x.png" id="logo" alt="Fluent IQ" />
+        </header>
+        <section role="main">
+            <div>
+                <div id="timer">
+                    <svg viewbox="0 0 250 250">
+                        <circle class="outer" cx="125" cy="125" r="125" />
+                        <circle class="inner" cx="125" cy="125" r="100" />
+                        <circle class="start" cx="125" cy="125" r="79" />
+                        <path class="loader" transform="translate(125, 125)"/>
+                    </svg>
+                    <p><span class="seconds">60s</span> Remaining</p>
+                </div>
                 <h1 class="text-center">Listen to the conversation and type what you hear</h1>
-    		</div>
-    	</section>
-    	<footer role="contentinfo">
-    		<p id="copyright">Copyright Fluent Scientific Ltd 2015, All Rights Reserved</p>
-    		<ul class="tos_links">
-    			<li><a href="#tos">Terms of Use</a></li>
-    			<li><a href="#privacy">Privacy Policy</a></li>
-    		</ul>
-    	</footer>
+                <div class="player no-js">
+                    <div class="controls">
+                        <span class="play control" title="Play">Play</span>
+                        <span class="pause control hide" title="Pause">Pause</span>
+                    </div>
+                    <div class="progress">
+                        <progress value="0" max="100">0%</progress>
+                        <span class="time curTime">0:00</span>
+                        <span class="time remainTime">0:00</span>
+                    </div>
+                    <audio preload controls>
+                        <source src="audio/theforce.mp3" type="audio/mpeg" />
+                    </audio>
+                </div>
 
-    	<script src="site.min.js"></script>
+                <textarea type="" class="text-box" rows="6"></textarea>
+
+                <nav>
+                    <ul>
+                        <li></li>
+                        <li><a href="#" class="btn btn-next">Next</a></li>
+                    </ul>
+                </nav>
+
+                <div class="test-progress divider">
+                    <ol class="steps">
+                        <li class="done">x</li>
+                        <li class="done">x</li>
+                        <li class="done">x</li>
+                        <li class="done">x</li>
+                        <li class="not-done">o</li>
+                        <li class="not-done">o</li>
+                        <li class="not-done">o</li>
+                        <li class="not-done">o</li>
+                        <li class="not-done">o</li>
+                        <li class="not-done">o</li>
+                        <li class="not-done">o</li>
+                        <li class="not-done">o</li>
+                        <li class="not-done">o</li>
+                        <li class="finish">*</li>
+                        <span>Results</span>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <footer role="contentinfo">
+            <p id="copyright">Copyright Fluent Scientific Ltd 2015, All Rights Reserved</p>
+            <ul class="tos_links">
+                <li><a href="#tos">Terms of Use</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+        </footer>
+
+        <script src="js/site.min.js"></script>
     </body>
 </html>
