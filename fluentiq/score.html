@@ -35,14 +35,438 @@
                     </div>
                 </div>
 
-                <div class="score-summary">
+                <div class="score-about">
                     <h2>About my score</h2>
                     <p>Your FluentIQ score of 5.3 means that you have an above average level of English communication. You could get by with travelling in an english speaking country. You are not yet at a level that would pass IELTS or TOEFL.</p>
                     <p>Your spoken English is at a level where most English speakers would be able to understand you quite easily.</p>
                     <p>Your ability to understand other people speaking English is below average which means you wolud struggle in holding a meaningful conversation in English.</p>
 
-                    <h2>Was this helpful?</h2>
-                    <p>We hope you found this helpful. If you would like to give us feedback or your ideas for features we can add to FluentIQ then we love to hear from you. <a href="#">Give your feedback.</a></p>
+                    <button class="btn-positive">Show detailed feedback</button>
+                    <button class="btn-positive hide">Show summary feedback</button>
+                </div>
+
+                <div class="score-summaries hide">
+                    <h2>Speaking</h2>
+                    <p>Your speaking score of 6.1 means that...</p>
+
+                    <div class="score-summary">
+                        <div class="label">1. Pronunciation</div>
+                        <div class="level">Beginner</div>
+                        <div class="meter">
+                            <span class="25 active"></span>
+                            <span class="50"></span>
+                            <span class="75"></span>
+                            <span class="100"></span>
+                        </div>
+                    </div>
+
+                    <h2>Listening</h2>
+                    <p>Your listening score of 3.9 means that...</p>
+
+                    <div class="score-summary">
+                        <div class="label">9. Comprehension</div>
+                        <div class="level">Intermediate</div>
+                        <div class="meter">
+                            <span class="25 active"></span>
+                            <span class="50 active"></span>
+                            <span class="75"></span>
+                            <span class="100"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="score-detailed">
+                    <div class="tabs">
+                        <div class="tab" data-panel="speaking">
+                            Speaking <span class="score speaking">6.1</span>
+                        </div>
+                        <div class="tab active" data-panel="listening">
+                            Listening <span class="score listening">3.9</span>
+                        </div>
+                    </div>
+                    <div class="panels">
+                        <div data-name="speaking">
+                            <p>Your speaking score of 6.1 means that...</p>
+
+                            <div class="score-detail">
+                                <div class="score-summary">
+                                    <div class="label">1. Pronunciation</div>
+                                    <div class="level">Beginner</div>
+                                    <div class="info" title="More information">?</div>
+                                    <div class="meter">
+                                        <span class="25 active"></span>
+                                        <span class="50"></span>
+                                        <span class="75"></span>
+                                        <span class="100"></span>
+                                    </div>
+                                </div>
+                                <div class="explaination">
+                                    <p>Your English pronunciation skill is at elementary level which means you have unclear pronuciation.</p>
+                                    <div class="example">
+                                        <p><strong>Sounds you are having the most trouble with:</strong></p>
+                                        <ul class="sounds">
+                                            <li><button class="btn-active btn-small active" data-sound="st">st</button></li>
+                                            <li><button class="btn-small" data-sound="th">th</button></li>
+                                            <li><button class="btn-small" data-sound="sph">sph</button></li>
+                                            <li><button class="btn-small" data-sound="ck">ck</button></li>
+                                            <li><button class="btn-small" data-sound="ght">ght</button></li>
+                                        </ul>
+                                        <p class="sound-example">
+                                            It was a <span data-name="st" class="active">st</span>ormy ni<span data-name="ght">ght</span> and <span data-name="th">th</span>e man was waving his fi<span data-name="st" class="active">st</span> to ano<span data-name="th">th</span>er man across <span data-name="th">th</span>e <span data-name="st" class="active">st</span>reet.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="samples">
+                                    <div class="player no-js">
+                                        <p class="title">My read aloud recording</p>
+                                        <div class="controls">
+                                            <span class="play control" title="Play">Play</span>
+                                            <span class="pause control hide" title="Pause">Pause</span>
+                                        </div>
+                                        <div class="progress">
+                                            <progress value="0" max="100">0%</progress>
+                                            <span class="time curTime">0:00</span>
+                                            <span class="time remainTime">0:00</span>
+                                        </div>
+                                        <audio preload controls>
+                                            <source src="audio/theforce.mp3" type="audio/mpeg" />
+                                        </audio>
+                                    </div>
+
+                                    <div class="player no-js">
+                                        <p class="title">Sample recording</p>
+                                        <div class="controls">
+                                            <span class="play control" title="Play">Play</span>
+                                            <span class="pause control hide" title="Pause">Pause</span>
+                                        </div>
+                                        <div class="progress">
+                                            <progress value="0" max="100">0%</progress>
+                                            <span class="time curTime">0:00</span>
+                                            <span class="time remainTime">0:00</span>
+                                        </div>
+                                        <audio preload controls>
+                                            <source src="audio/theforce.mp3" type="audio/mpeg" />
+                                        </audio>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="score-detail">
+                                <div class="score-summary">
+                                    <div class="label">2. Intonation</div>
+                                    <div class="level">Intermediate</div>
+                                    <div class="info" title="More information">?</div>
+                                    <div class="meter">
+                                        <span class="25 active"></span>
+                                        <span class="50 active"></span>
+                                        <span class="75 active"></span>
+                                        <span class="100"></span>
+                                    </div>
+                                </div>
+                                <div class="explaination">
+                                    <p>your intonation will be understandable to native English speakers.</p>
+                                </div>
+                                <div class="samples">
+                                    <div class="player no-js">
+                                        <p class="title">My read aloud recording</p>
+                                        <div class="controls">
+                                            <span class="play control" title="Play">Play</span>
+                                            <span class="pause control hide" title="Pause">Pause</span>
+                                        </div>
+                                        <div class="progress">
+                                            <progress value="0" max="100">0%</progress>
+                                            <span class="time curTime">0:00</span>
+                                            <span class="time remainTime">0:00</span>
+                                        </div>
+                                        <audio preload controls>
+                                            <source src="audio/theforce.mp3" type="audio/mpeg" />
+                                        </audio>
+                                    </div>
+
+                                    <div class="player no-js">
+                                        <p class="title">Sample recording</p>
+                                        <div class="controls">
+                                            <span class="play control" title="Play">Play</span>
+                                            <span class="pause control hide" title="Pause">Pause</span>
+                                        </div>
+                                        <div class="progress">
+                                            <progress value="0" max="100">0%</progress>
+                                            <span class="time curTime">0:00</span>
+                                            <span class="time remainTime">0:00</span>
+                                        </div>
+                                        <audio preload controls>
+                                            <source src="audio/theforce.mp3" type="audio/mpeg" />
+                                        </audio>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="score-detail">
+                                <div class="score-summary">
+                                    <div class="label">5. Vocabulary Mastery</div>
+                                    <div class="level">Beginner</div>
+                                    <div class="info" title="More information">?</div>
+                                    <div class="meter">
+                                        <span class="25 active"></span>
+                                        <span class="50"></span>
+                                        <span class="75"></span>
+                                        <span class="100"></span>
+                                    </div>
+                                </div>
+                                <div class="explaination">
+                                    <p>You mispronounced several words in your answer.</p>
+                                </div>
+                                <div class="samples">
+                                    <div class="player no-js">
+                                        <p class="title">My read aloud recording</p>
+                                        <div class="controls">
+                                            <span class="play control" title="Play">Play</span>
+                                            <span class="pause control hide" title="Pause">Pause</span>
+                                        </div>
+                                        <div class="progress">
+                                            <progress value="0" max="100">0%</progress>
+                                            <span class="time curTime">0:00</span>
+                                            <span class="time remainTime">0:00</span>
+                                        </div>
+                                        <audio preload controls>
+                                            <source src="audio/theforce.mp3" type="audio/mpeg" />
+                                        </audio>
+                                    </div>
+
+                                    <div class="player no-js">
+                                        <p class="title">Sample recording</p>
+                                        <div class="controls">
+                                            <span class="play control" title="Play">Play</span>
+                                            <span class="pause control hide" title="Pause">Pause</span>
+                                        </div>
+                                        <div class="progress">
+                                            <progress value="0" max="100">0%</progress>
+                                            <span class="time curTime">0:00</span>
+                                            <span class="time remainTime">0:00</span>
+                                        </div>
+                                        <audio preload controls>
+                                            <source src="audio/theforce.mp3" type="audio/mpeg" />
+                                        </audio>
+                                    </div>
+                                </div>
+                                <div class="vocab-example">
+                                    <p>A motorist in South Korea has <span class="active">endured</span> a <span class="active">hair-raising</span> highway ride at the wheel of a vehivle with a stuck accelerator.</p>
+                                    <p>The dash cam footage captures the moment the <span class="active">vehicle</span> first rams a taxi out of the way and then picks up speed with the <span class="active">driver</span> keeping as far to the right as possible.</p>
+                                    <p>The <span class="active">driver eventually runs out</span> of room and <span class="active">opts</span> to head into the traffic, sideswiping some, hitting lane <span class="active">dividers</span>, before rear-ending a Lexus <span class="active">sedan</span> and <span class="active">crashing</span> to a <span class="active">stop</span> after hitting a lamp post.</p>
+                                    <p>No other dteails on the <span class="active">condition</span> of the <span class="active">driver</span> have been reported of why the <span class="active">vehicle</span> wasn't driving into something to stop its progress <span class="active">before</span> the speed got too hight.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-name="listening" class="hide">
+                            <p>Your listening score of 3.9 means that you have poor listening skills. You would be expected to receive an IELTS socre of about 5 and an iBT TOEFL score in the reange orf 12-16 in the listening section.</p>
+                            <p>Your ability to understand other people speaking Enlighs is below average which means you would struggle in holding a meaningful conversation in English</p>
+
+
+                            <div class="score-detail">
+                                <div class="score-summary">
+                                    <div class="label">9. Comprehension</div>
+                                    <div class="level">Beginner</div>
+                                    <div class="info" title="More information">?</div>
+                                    <div class="meter">
+                                        <span class="25 active"></span>
+                                        <span class="50"></span>
+                                        <span class="75"></span>
+                                        <span class="100"></span>
+                                    </div>
+                                </div>
+                                <div class="explaination">
+                                    <p>It seems that you understood the meain ideas well, but in the future you should pay maore attention to the explicit deatil.</p>
+                                </div>
+                                <div class="collapsibles">
+                                    <div class="collapsibles-group">
+                                        <section class="collapsible incorrect collapsed">
+                                            <header>
+                                                <div class="title">Question 1</div>
+                                                <div class="result"></div>
+                                            </header>
+                                            <div class="body">
+
+                                                <div class="player no-js">
+                                                    <div class="controls">
+                                                        <span class="play control" title="Play">Play</span>
+                                                        <span class="pause control hide" title="Pause">Pause</span>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <progress value="0" max="100">0%</progress>
+                                                        <span class="time curTime">0:00</span>
+                                                        <span class="time remainTime">0:00</span>
+                                                    </div>
+                                                    <audio preload controls>
+                                                        <source src="audio/theforce.mp3" type="audio/mpeg" />
+                                                    </audio>
+                                                </div>
+
+                                                <p>Why does the man think doctors have bad handwriting?</p>
+                                                <div class="answer correct"><p>The lady will join up to internet banking.</p></div>
+                                                <div class="answer"><p>The man is confident in making online payments.</p></div>
+                                                <div class="answer selected"><p>The payments the lady has to make can only be done at the bank.</p></div>
+                                                <div class="answer"><p>The man does not have to pay any bills.</p></div>
+
+                                            </div>
+                                        </section>
+                                        <section class="collapsible correct collapsed">
+                                            <header>
+                                                <div class="title">Question 2</div>
+                                                <div class="result"></div>
+                                            </header>
+                                            <div class="body">
+
+                                                <div class="player no-js">
+                                                    <div class="controls">
+                                                        <span class="play control" title="Play">Play</span>
+                                                        <span class="pause control hide" title="Pause">Pause</span>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <progress value="0" max="100">0%</progress>
+                                                        <span class="time curTime">0:00</span>
+                                                        <span class="time remainTime">0:00</span>
+                                                    </div>
+                                                    <audio preload controls>
+                                                        <source src="audio/theforce.mp3" type="audio/mpeg" />
+                                                    </audio>
+                                                </div>
+
+                                                <p>Why does the man think doctors have bad handwriting?</p>
+                                                <div class="answer correct selected"><p>The lady will join up to internet banking.</p></div>
+                                                <div class="answer"><p>The man is confident in making online payments.</p></div>
+                                                <div class="answer"><p>The payments the lady has to make can only be done at the bank.</p></div>
+                                                <div class="answer"><p>The man does not have to pay any bills.</p></div>
+
+                                            </div>
+                                        </section>
+                                        <section class="collapsible correct collapsed">
+                                            <header>
+                                                <div class="title">Question 3</div>
+                                                <div class="result"></div>
+                                            </header>
+                                            <div class="body">
+
+                                                <div class="player no-js">
+                                                    <div class="controls">
+                                                        <span class="play control" title="Play">Play</span>
+                                                        <span class="pause control hide" title="Pause">Pause</span>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <progress value="0" max="100">0%</progress>
+                                                        <span class="time curTime">0:00</span>
+                                                        <span class="time remainTime">0:00</span>
+                                                    </div>
+                                                    <audio preload controls>
+                                                        <source src="audio/theforce.mp3" type="audio/mpeg" />
+                                                    </audio>
+                                                </div>
+
+                                                <p>Why does the man think doctors have bad handwriting?</p>
+                                                <div class="answer correct selected"><p>The lady will join up to internet banking.</p></div>
+                                                <div class="answer"><p>The man is confident in making online payments.</p></div>
+                                                <div class="answer"><p>The payments the lady has to make can only be done at the bank.</p></div>
+                                                <div class="answer"><p>The man does not have to pay any bills.</p></div>
+
+                                            </div>
+                                        </section>
+                                    </div>
+
+                                    <div class="collapsibles-group">
+                                        <section class="collapsible correct collapsed">
+                                            <header>
+                                                <div class="title">Question 4</div>
+                                                <div class="result"></div>
+                                            </header>
+                                            <div class="body">
+
+                                                <div class="player no-js">
+                                                    <div class="controls">
+                                                        <span class="play control" title="Play">Play</span>
+                                                        <span class="pause control hide" title="Pause">Pause</span>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <progress value="0" max="100">0%</progress>
+                                                        <span class="time curTime">0:00</span>
+                                                        <span class="time remainTime">0:00</span>
+                                                    </div>
+                                                    <audio preload controls>
+                                                        <source src="audio/theforce.mp3" type="audio/mpeg" />
+                                                    </audio>
+                                                </div>
+
+                                                <p>Why does the man think doctors have bad handwriting?</p>
+                                                <div class="answer correct selected"><p>The lady will join up to internet banking.</p></div>
+                                                <div class="answer"><p>The man is confident in making online payments.</p></div>
+                                                <div class="answer"><p>The payments the lady has to make can only be done at the bank.</p></div>
+                                                <div class="answer"><p>The man does not have to pay any bills.</p></div>
+
+                                            </div>
+                                        </section>
+                                        <section class="collapsible correct collapsed">
+                                            <header>
+                                                <div class="title">Question 5</div>
+                                                <div class="result"></div>
+                                            </header>
+                                            <div class="body">
+
+                                                <div class="player no-js">
+                                                    <div class="controls">
+                                                        <span class="play control" title="Play">Play</span>
+                                                        <span class="pause control hide" title="Pause">Pause</span>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <progress value="0" max="100">0%</progress>
+                                                        <span class="time curTime">0:00</span>
+                                                        <span class="time remainTime">0:00</span>
+                                                    </div>
+                                                    <audio preload controls>
+                                                        <source src="audio/theforce.mp3" type="audio/mpeg" />
+                                                    </audio>
+                                                </div>
+
+                                                <p>Why does the man think doctors have bad handwriting?</p>
+                                                <div class="answer correct selected"><p>The lady will join up to internet banking.</p></div>
+                                                <div class="answer"><p>The man is confident in making online payments.</p></div>
+                                                <div class="answer"><p>The payments the lady has to make can only be done at the bank.</p></div>
+                                                <div class="answer"><p>The man does not have to pay any bills.</p></div>
+
+                                            </div>
+                                        </section>
+                                        <section class="collapsible correct collapsed">
+                                            <header>
+                                                <div class="title">Question 6</div>
+                                                <div class="result"></div>
+                                            </header>
+                                            <div class="body">
+
+                                                <div class="player no-js">
+                                                    <div class="controls">
+                                                        <span class="play control" title="Play">Play</span>
+                                                        <span class="pause control hide" title="Pause">Pause</span>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <progress value="0" max="100">0%</progress>
+                                                        <span class="time curTime">0:00</span>
+                                                        <span class="time remainTime">0:00</span>
+                                                    </div>
+                                                    <audio preload controls>
+                                                        <source src="audio/theforce.mp3" type="audio/mpeg" />
+                                                    </audio>
+                                                </div>
+
+                                                <p>Why does the man think doctors have bad handwriting?</p>
+                                                <div class="answer correct selected"><p>The lady will join up to internet banking.</p></div>
+                                                <div class="answer"><p>The man is confident in making online payments.</p></div>
+                                                <div class="answer"><p>The payments the lady has to make can only be done at the bank.</p></div>
+                                                <div class="answer"><p>The man does not have to pay any bills.</p></div>
+
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <h1>Help your friends!</h1>
@@ -54,6 +478,16 @@
                     <li><a href="" title="LinkedIn" class="icon icon-linkedin">LinkedIn</a></li>
                     <li><a href="" title="Email" class="icon icon-mail">Email</a></li>
                 </ol>
+
+
+                <div id="sentenceStructure" class="modal-dialog">
+                    <div>
+                        <h1>Sentence Structure</h1>
+                        <p>Sentence structures referes to the length and complexity of sentences you use.</p>
+                        <p class="example">"I did the laundry. I cleaned the house. I was talking to my friend on the phone all the time."</p>
+                        <a href="#close" title="OK" class="btn btn-large btn-positive">OK</a>
+                    </div>
+                </div>
             </div>
         </section>
         <footer role="contentinfo">
