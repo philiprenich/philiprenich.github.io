@@ -41,11 +41,11 @@
                     <p>Your spoken English is at a level where most English speakers would be able to understand you quite easily.</p>
                     <p>Your ability to understand other people speaking English is below average which means you wolud struggle in holding a meaningful conversation in English.</p>
 
-                    <button class="btn-positive">Show detailed feedback</button>
-                    <button class="btn-positive hide">Show summary feedback</button>
+                    <button class="btn-positive" data-name="detail">Show detailed feedback</button>
+                    <button class="btn-positive hide" data-name="summary">Show summary feedback</button>
                 </div>
 
-                <div class="score-summaries hide">
+                <div class="score-summaries">
                     <h2>Speaking</h2>
                     <p>Your speaking score of 6.1 means that...</p>
 
@@ -75,12 +75,12 @@
                     </div>
                 </div>
 
-                <div class="score-detailed">
+                <div class="score-detailed hide">
                     <div class="tabs">
-                        <div class="tab" data-panel="speaking">
+                        <div class="tab active" data-panel="speaking">
                             Speaking <span class="score speaking">6.1</span>
                         </div>
-                        <div class="tab active" data-panel="listening">
+                        <div class="tab" data-panel="listening">
                             Listening <span class="score listening">3.9</span>
                         </div>
                     </div>
